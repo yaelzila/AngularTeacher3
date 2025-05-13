@@ -1,0 +1,16 @@
+<p>students-list works!</p>
+
+@for(student of students; track $index) {
+    <!-- @if(volunteer?.age > 18) { -->
+        <div>
+            <span>{{student.firstName}} </span>
+            <span>{{student.lastName}} </span>
+            <span>{{student.id}} </span>
+        </div>
+    <!-- } -->
+
+}
+
+<p> </p>
+
+<button (click)="sendTextToParent()">click here to end</button>

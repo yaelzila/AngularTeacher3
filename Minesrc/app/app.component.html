@@ -1,0 +1,8 @@
+<h1>School</h1>
+<!-- <h3>האירגון שלנו עוזר לאנשים,,,,</h3> -->
+<!-- <volunteer-manager></volunteer-manager> -->
+<students-list [description]="'the list of students'" (endText)="updateTextFromChild($event)"></students-list>
+<!-- תוכן דינאמי -->
+<router-outlet></router-outlet>
+
+<h3>{{endText}}</h3>
